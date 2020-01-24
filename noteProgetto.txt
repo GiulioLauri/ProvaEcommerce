@@ -1,0 +1,29 @@
+##### CREAZIONE NUOVO PROGETTO: #####
+npm init -y
+
+##### INSTALLAZIONE DIPENDENZA #####
+supponiamo che nel codice ho una sintassi del tipo:
+var lib = require("express");
+
+allora dovrò installare la dipendenza con npm:
+>> npm install express
+
+##### INCLUSIONE DI FILE JAVASCRIPT ESTERNI #####
+1- creare file javascript che conterrà le funzioni da importare ('fileFunzioni.js')
+2- scrivere il seguente codice:
+    exports.miaFunc = function(){
+        return 'esempio di return';
+    }
+3- andare nel file javascript principale e scrivere:
+    var lib = require('./fileFunzioni.js');
+    lib.miaFunc();
+
+
+##### INTEGRAZIONE MYSQL #####
+>> npm install mysql
+
+##### INSTALLAZIONE GITHUB DESKTOP #####
+>> sudo apt update
+>> sudo apt install snapd
+>> sudo snap install github-desktop --beta --classic
+
